@@ -1,4 +1,4 @@
-name: Building and testing
+name: Building and... just building
 on: [push]
 jobs:
   building:
@@ -23,24 +23,3 @@ jobs:
           name: pdfs
           path: ./*.pdf
           if-no-files-found: error
-  testing:
-    needs: building
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-python@v3
-        with:
-          python-version: "3.10"
-      - uses: snok/install-poetry@v1
-        with:
-          virtualenvs-create: false
-      - name: Install Python dependencies
-        working-directory: ./tests  # Needs to find pyproject.toml file
-        run: poetry install
-      - name: Test the suite itself
-        run: make test-self
-      - uses: actions/download-artifact@v3
-        with:
-          name: pdfs  # Specify name, else it'll be downloaded to a subdirectory
-      - name: Test generated PDFs
-        run: make test-pdfs
