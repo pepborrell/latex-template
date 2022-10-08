@@ -731,23 +731,11 @@
         % hidelinks,% Toggle here!
         plainpages=false,%
         pdfsubject={%
-            Comprehensive LaTeX template with examples for theses, books
-            and more, employing the 'latest and greatest'.
         },
         pdfkeywords={%
-            latex,%
-            template,%
-            modern,%
-            thesis,%
-            phd,%
-            master,%
-            bachelor,%
-            best practices,%
         },
         pdfcreator={%
-            LaTeX with hyperref,
-            glossaries-extra/bib2gls
-            and biblatex/biber
+            Created using LaTeX
         },
         bookmarksnumbered=true,%
         % Default opening of the document in supported PDF viewers:
