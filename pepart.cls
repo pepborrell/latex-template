@@ -411,6 +411,9 @@
 
 \RequirePackage{url}% Escaping special chars as URL
 
+% Custom parskip definition, so there's a space between paragraphs
+\setlength{\parskip}{1ex}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Language Support
